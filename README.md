@@ -30,6 +30,8 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
+> anaconda系を利用の場合は condaコマンド
+
 ## UMAPパラメータ
 
 設定|設定値
@@ -43,20 +45,12 @@ UMAP neighbors|5個
 
 ### jupyter実行結果
 
-![fig2-1](README/2021-02-27-17-54-06.png)
+![fig2-1](README/2021-02-28-16-06-18.png)
 
 ### 入力画像サンプル
 
-![fig2-2](README/2021-02-27-17-54-56.png)
+![fig2-2](README/2021-02-28-16-11-09.png)
 
 ### 実行結果3D散布図
 
-![fig2-3](README/2021-02-27-17-55-22.png)
-
-## グラフ上の色と値について
-
-色|値|内容
----|---|---
-紫|1|MP掌側
-薄緑|2|MP背側
-橙|3|手関節背側
+![fig2-3](README/2021-02-28-16-07-30.png)
