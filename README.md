@@ -61,6 +61,15 @@ pyenv install 3.8.8
 pyenv rehash
 ```
 
+### nodenv導入
+
+```zsh
+anyenv install nodenv
+exec $SHELL -l
+nodenv install 15.10.0
+nodenv rehash
+```
+
 ## ソースの導入
 
 ### ソースの取得
@@ -97,6 +106,15 @@ Available kernels:
 
 > python3カーネルが、3.8.8/envs/umap_us 配下に設定されていることを確認する。
 
+### jupyter labの導入
+
+```zsh
+pip install jupyterlab
+pip install jupyterlab-git==0.30.0b2
+pip install ptvsd xeus-python
+jupyter labextension install @jupyterlab/debugger
+```
+
 ### jupyter token の固定化 （以前に実行している場合は不要）
 
 ```zsh
@@ -116,10 +134,10 @@ UMAP neighbors|5個
 
 ## 実行結果
 
-### 実行方法（jupyter notebook編）
+### 実行方法
 
 ```zsh
-jupyter notebook
+jupyter lab
 ```
 
 ### jupyter実行結果
@@ -159,4 +177,17 @@ Remove 1 kernel specs [y/N]: y
 ```text
 % python -c "import tkinter; print(tkinter.Tcl().eval('info patchlevel'))"
 8.6.11
+```
+
+### jupyter extenshion確認
+
+```zsh
+jupyter server extension list
+jupyter labextension list
+```
+
+### jupyter labextension update
+
+```zsh
+jupyter labextension update --all
 ```
